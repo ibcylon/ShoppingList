@@ -13,6 +13,9 @@
 		D56E9BF92731147B002A4B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56E9BF72731147B002A4B04 /* Main.storyboard */; };
 		D56E9BFB2731147C002A4B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56E9BFA2731147C002A4B04 /* Assets.xcassets */; };
 		D56E9BFE2731147C002A4B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56E9BFC2731147C002A4B04 /* LaunchScreen.storyboard */; };
+		D56E9C072731176F002A4B04 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E9C062731176F002A4B04 /* ShoppingTableViewController.swift */; };
+		D56E9C0A2731182A002A4B04 /* ShoppingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E9C082731182A002A4B04 /* ShoppingListTableViewCell.swift */; };
+		D56E9C0B2731182A002A4B04 /* ShoppingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56E9C092731182A002A4B04 /* ShoppingListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D56E9BFA2731147C002A4B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D56E9BFD2731147C002A4B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D56E9BFF2731147C002A4B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56E9C062731176F002A4B04 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		D56E9C082731182A002A4B04 /* ShoppingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewCell.swift; sourceTree = "<group>"; };
+		D56E9C092731182A002A4B04 /* ShoppingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		D56E9BF02731147B002A4B04 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				D56E9C0527311496002A4B04 /* ViewController */,
 				D56E9BF12731147B002A4B04 /* AppDelegate.swift */,
 				D56E9BF32731147B002A4B04 /* SceneDelegate.swift */,
 				D56E9BF52731147B002A4B04 /* ViewController.swift */,
 				D56E9BF72731147B002A4B04 /* Main.storyboard */,
+				D56E9C092731182A002A4B04 /* ShoppingListTableViewCell.xib */,
 				D56E9BFA2731147C002A4B04 /* Assets.xcassets */,
 				D56E9BFC2731147C002A4B04 /* LaunchScreen.storyboard */,
 				D56E9BFF2731147C002A4B04 /* Info.plist */,
 			);
 			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		D56E9C0527311496002A4B04 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D56E9C062731176F002A4B04 /* ShoppingTableViewController.swift */,
+				D56E9C082731182A002A4B04 /* ShoppingListTableViewCell.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56E9BFE2731147C002A4B04 /* LaunchScreen.storyboard in Resources */,
+				D56E9C0B2731182A002A4B04 /* ShoppingListTableViewCell.xib in Resources */,
 				D56E9BFB2731147C002A4B04 /* Assets.xcassets in Resources */,
 				D56E9BF92731147B002A4B04 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56E9C0A2731182A002A4B04 /* ShoppingListTableViewCell.swift in Sources */,
 				D56E9BF62731147B002A4B04 /* ViewController.swift in Sources */,
+				D56E9C072731176F002A4B04 /* ShoppingTableViewController.swift in Sources */,
 				D56E9BF22731147B002A4B04 /* AppDelegate.swift in Sources */,
 				D56E9BF42731147B002A4B04 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
