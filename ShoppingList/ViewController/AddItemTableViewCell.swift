@@ -9,37 +9,34 @@ import UIKit
 import RealmSwift
 
 class AddItemTableViewCell: UITableViewCell {
-
+    
     static let identifier = "addItemCell"
-    @IBOutlet weak var shoptextField: UITextField!
+    @IBOutlet weak var shopTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     
+    //Closure
+    var addButtonAction : (() -> ())?
     let localRealm = try! Realm()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
+        // Initialization code
         addButton.layer.cornerRadius = 10
+        addButton.addTarget(self, action: #selector(addButtonClicked(_:)), for: .touchUpInside)
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     @IBAction func addButtonClicked(_ sender: UIButton) {
-        
-        addTask()
-        
-    }
-    
-    func addTask(){
-        let task = ShopListModel(shopItem: shoptextField.text!)
+        //클로저 실행
+        let task = ShopListModel(shopItem: shopTextField.text!)
         
         try! localRealm.write {
             localRealm.add(task)
         }
+        addButtonAction?()
     }
-    
 }

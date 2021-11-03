@@ -20,6 +20,7 @@
 		D56E9C1027315057002A4B04 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D56E9C0F27315057002A4B04 /* RealmSwift */; };
 		D56E9C122731508A002A4B04 /* AddItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E9C112731508A002A4B04 /* AddItemTableViewCell.swift */; };
 		D56E9C15273153A9002A4B04 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E9C14273153A9002A4B04 /* RealmModel.swift */; };
+		D56E9C4C2731D5C8002A4B04 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56E9C4B2731D5C8002A4B04 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D56E9C092731182A002A4B04 /* ShoppingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingListTableViewCell.xib; sourceTree = "<group>"; };
 		D56E9C112731508A002A4B04 /* AddItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewCell.swift; sourceTree = "<group>"; };
 		D56E9C14273153A9002A4B04 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		D56E9C4B2731D5C8002A4B04 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		D56E9BF02731147B002A4B04 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
+				D56E9C4A2731D5B8002A4B04 /* API */,
 				D56E9C1327315306002A4B04 /* Realm */,
 				D56E9C0527311496002A4B04 /* ViewController */,
 				D56E9BF12731147B002A4B04 /* AppDelegate.swift */,
@@ -100,6 +103,14 @@
 				D56E9C14273153A9002A4B04 /* RealmModel.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		D56E9C4A2731D5B8002A4B04 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D56E9C4B2731D5C8002A4B04 /* Constants.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				D56E9C072731176F002A4B04 /* ShoppingViewController.swift in Sources */,
 				D56E9BF22731147B002A4B04 /* AppDelegate.swift in Sources */,
 				D56E9BF42731147B002A4B04 /* SceneDelegate.swift in Sources */,
+				D56E9C4C2731D5C8002A4B04 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
