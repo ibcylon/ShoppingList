@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ShoppingListTableViewCell: UITableViewCell {
 
@@ -15,11 +16,16 @@ class ShoppingListTableViewCell: UITableViewCell {
     var isChecked:Bool = false
     var isBookMarked:Bool = false
     
+    let localRealm = try! Realm()
+    var tasks:Results<ShopListModel>!
+    
     static let identifier = "ShoppingListTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        tasks = localRealm.objects(ShopListModel.self)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
